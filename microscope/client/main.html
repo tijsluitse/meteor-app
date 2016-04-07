@@ -7,11 +7,16 @@
 
   {{> hello}}
   {{> info}}
+  {{> loginButtons}}
 </body>
 
 <template name="hello">
+  {{#if currentUser}}
+
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+
+  {{/if}}
 </template>
 
 <template name="info">
