@@ -32,8 +32,8 @@ De ideale versie van de applicatie heeft:
 - gemiddeldes voor wanneer een terras druk is en wanneer minder
 
 Verschillende views:
-1. home met login functie
-2. overzicht met locaties in de buurt die op dit moment in de zon liggen
-3. zoek functie naar andere locaties
-4. informatie over de applicatie
+- home met login functie
+- overzicht met locaties in de buurt die op dit moment in de zon liggen
+- zoek functie naar andere locaties
+- informatie over de applicatie
 
