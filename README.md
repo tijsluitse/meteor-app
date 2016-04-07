@@ -12,6 +12,8 @@ Cons:
 - It does not calculates the sunlight blocked by buildings around a certain position
 - I do not know what kind of data the library produces
 
+Source: [SunCalc](https://github.com/mourner/suncalc)
+
 ##Exercise 4
 De applicatie die ik wil gaan maken is een simpele app waarbij je cafes die in de buurt zijn, een terras hebben wat in de zon ligt. De applicatie houdt rekening met de locatie waar jij je bevindt, welk terras er op dit moment in de zon zou liggen en op de zon ook daadwerkelijk op die locatie schijnt. De sortering van de cafes zal worden gedaan op locatie en op de duur van hoeveel zon er nog is op dat terras. 
 
