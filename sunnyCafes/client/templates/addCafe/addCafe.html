@@ -1,0 +1,26 @@
+<template name="addCafe">
+  {{> header}}
+  <main id="addCafePage">
+        
+    <div class="getLatLng">
+        <h3>Enter an adress and press the button</h3>
+        <input id="address" type="text" name="address" placeholder="Enter address here" />
+        <button id="btn">Get Location</button>
+    </div>
+
+    <form class="add-cafe">
+
+      	<input type="text" name="name" placeholder="Name">
+      	<input type="text" id="latitude" name="lat" placeholder="Latitude" readonly>
+      	<input type="text" id="longtitude" name="lng" placeholder="Longtitude" readonly>
+        <input type="text" name="imgUrl" placeholder="Google Image url">
+    	<label>Sunrise</label>
+    		<input type="time" name="sunrise" placeholder="07:00">
+    	<label>Sunset</label>
+     		<input type="time" name="sunset" placeholder="21:15">
+      
+      	<input type="submit" value="Submit" />
+
+    </form>
+  </main>
+</template>

@@ -1,0 +1,34 @@
+<template name="singleCafe">
+  {{> header}}
+  <main id="cafe-page">
+
+    <img src="{{singleCafe.imgUrl}}" alt="Image {{singleCafe.name}}">  
+    <h1>{{singleCafe.name}}</h1>
+    <p>{{singleCafe.address}}</p>
+    
+    <div id=sunrise>
+        <img src="../images/sunrise.svg" alt="" style="width:100px;">
+        <span>{{singleCafe.sunrise}}</span>
+    </div>
+    <div id=sunset>
+        <img src="../images/sunset.svg" alt="" style="width:100px;">
+        <span>{{singleCafe.sunset}}</span>
+    </div>
+
+    {{#with weatherData}}
+        <div id="temp">
+            <img src="../images/temp.svg" alt="" style="width:100px;">
+            <span>{{main.temp}}</span><br />
+        </div>
+        <div id="weather">
+            <img src="../images/weather.svg" alt="" style="width:100px;">
+            <span>{{weather.[0].description}}</span><br />
+        </div>
+        <div id="wind">
+            <img src="../images/wind.svg" alt="" style="width:100px;">
+            <span>{{wind.speed}}</span><br />
+        </div>
+    {{/with}}
+
+  </main>
+</template>

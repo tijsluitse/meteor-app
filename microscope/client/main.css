@@ -1,1 +1,56 @@
 /* CSS declarations go here */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+.cafesList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.listItem {
+	width: 25%;
+	padding: 1em;
+}
+
+.listItem header {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+
+.listItem header img {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #F98B60;
+}
+
+.intro {
+	width: 45em;
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.intro h1 {
+	color: white;
+	margin-bottom: 50px;
+	font-size: 3em;
+}
+
+.intro a {
+	padding: 20px 40px;
+	background-color: #FFC057;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #F98B60;
+}
