@@ -1,9 +1,9 @@
 <template name="cafesList">
   
     {{> header}}
-
-    {{#if currentUser}}
-        <h2>Voeg nu cafes toe!</h2>
+    <div class="cafesListContent">
+        {{#if currentUser}}
+        <h2>Alle Cafes</h2>
     {{else}}
         <h2>U moet eerst inloggen om cafes toe te voegen</h2>
     {{/if}}
@@ -11,16 +11,18 @@
         {{#each Cafes}}
         <li>
           <a href='/singleCafe/{{_id}}' class="cafeItem">
-            <span>Name: {{name}}</span><br />
-            <span>Address: {{address}}</span><br />
-            <span>Location: </span><span id="lat">{{lat}}</span> - <span id="lng">{{lng}}</span>
+            <span>Name: {{Name}}</span><br />
+            <span>Address: {{Adres}}</span><br />
+            <span>Location: </span><span id="lat">{{Lattitude}}</span> - <span id="lng">{{Longtitude}}</span>
         </a>
             {{#if currentUser}}
-                <button class="remove-cafe">X</button>
+                <button class="removeCafe">X</button>
             {{/if}}
         </li>
         {{/each}}
     </ul>
+    <a href="/addCafe"><button id="btn">Voeg nieuw cafe toe</button></a>
+    </div>
 
 </template>
 

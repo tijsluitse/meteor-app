@@ -5,7 +5,7 @@ Template.cafesList.helpers ({
 })
 
 Template.cafesList.events ({
-  	"click .remove-cafe": function(event){
+  	"click .removeCafe": function(event){
     	if(confirm('Are you sure you want to delete?')){
       		Meteor.call('deleteCafe', this._id)
     	}
@@ -15,16 +15,18 @@ Template.cafesList.events ({
 
 Template.cafesList.events ({
 	"click .cafeItem": function(event) {
+		
 		var lat = document.getElementById("lat").innerHTML;
 		var lng = document.getElementById("lng").innerHTML;
 
-		Meteor.call('checkCurrent', lat, lng, callback)
+		Meteor.call('checkCurrentWeather', lat, lng, callback)
 
 		function callback (err, res) {
 	    	if (err) {
 	       	 	console.log(err);
 	        	return false;
 	    	}
+
 	    	Session.set('weather', res);
 	    	weatherData = Session.get('weather');
 		}

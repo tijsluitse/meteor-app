@@ -2,33 +2,55 @@
   {{> header}}
   <main id="cafe-page">
 
-    <img src="{{singleCafe.imgUrl}}" alt="Image {{singleCafe.name}}">  
-    <h1>{{singleCafe.name}}</h1>
-    <p>{{singleCafe.address}}</p>
-    
-    <div id=sunrise>
-        <img src="../images/sunrise.svg" alt="" style="width:100px;">
-        <span>{{singleCafe.sunrise}}</span>
-    </div>
-    <div id=sunset>
-        <img src="../images/sunset.svg" alt="" style="width:100px;">
-        <span>{{singleCafe.sunset}}</span>
-    </div>
+    <header style="background-image: url({{singleCafe.Image}});">
+            
+    </header>
 
-    {{#with weatherData}}
-        <div id="temp">
-            <img src="../images/temp.svg" alt="" style="width:100px;">
-            <span>{{main.temp}}</span><br />
+    <div class="content">
+        <h1>{{singleCafe.Name}}</h1>
+        <p>{{singleCafe.Adres}}</p>
+
+        <div class="weatherData">
+            
+             <div class="weatherItem" id=sunrise>
+                <img src="../images/sunrise.svg" alt="" style="width:100px;">
+                <span>{{singleCafe.sunrise}}</span>
+
+                <form class="addSunriseField">
+                    <input type="text" name="sunrise" id="addSunrise">
+                    <input type="submit" value="Add Sunrise" />
+                </form>
+
+            </div>
+            <div class="weatherItem" id=sunset>
+                <img src="../images/sunset.svg" alt="" style="width:100px;">
+                <span>{{singleCafe.sunset}}</span>
+
+                <form class="addSunsetField">
+                    <input type="text" name="sunset" id="addSunset">
+                    <input type="submit" value="Add Sunset" />
+                </form>
+
+            </div>
+
+        {{#with weatherData}}
+            <div class="weatherItem" id="temp">
+                <img src="../images/temp.svg" alt="" style="width:100px;">
+                <span>{{main.temp}}</span><br />
+            </div>
+            <div class="weatherItem" id="weather">
+                <img src="../images/weather.svg" alt="" style="width:100px;">
+                <span>{{weather.[0].description}}</span><br />
+            </div>
+            <div class="weatherItem" id="wind">
+                <img src="../images/wind.svg" alt="" style="width:100px;">
+                <span>{{wind.speed}}</span><br />
+            </div>
+        {{/with}}
+
         </div>
-        <div id="weather">
-            <img src="../images/weather.svg" alt="" style="width:100px;">
-            <span>{{weather.[0].description}}</span><br />
-        </div>
-        <div id="wind">
-            <img src="../images/wind.svg" alt="" style="width:100px;">
-            <span>{{wind.speed}}</span><br />
-        </div>
-    {{/with}}
+        
+    </div>
 
   </main>
 </template>

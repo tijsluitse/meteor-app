@@ -1,0 +1,702 @@
+[
+	{
+		"Name": "Hendrix", 
+		"Adres": "de Clerqstraat 82 Amsterdam", 
+		"Lattitude": 52.370714, 
+		"Longtitude": 4.868593,
+		"Image": "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads//2015/04/hendrix_amsterdam1-c456e4a078db4ac54781e855dcbf0c16.jpg"
+	},
+	{
+		"Name": "Biertuinen", 
+		"Adres": "Linnaeusstraat 29 1093 EE Amsterdam", 
+		"Lattitude": 52.362325, 
+		"Longtitude": 4.924244,
+		"Image": "http://www.debiertuin.nl/upload/tafels-en-bloemen_4.jpg"
+	},
+	{
+		"Name": "Bar bukowski", 
+		"Adres": "Oosterpark 10 1092 AE Amsterdam", 
+		"Lattitude": 52.357976, 
+		"Longtitude": 4.917713,
+		"Image": "http://www.barbukowski.nl/gallery/bar_1.jpg"
+	},
+	{
+		"Name": "Cafe Kuijper", 
+		"Adres": "Linnaeusstraat 79 1093 EK Amsterdam", 
+		"Lattitude": 52.359869, 
+		"Longtitude": 4.925538,
+		"Image": "http://fast.mediamatic.nl/f/psjq/image/217/73294-950-535.jpg"
+	},
+			{
+		"Name": "Smokin Barrels", 
+		"Adres": "Beukenplein 22 1091 KH Amsterdam", 
+		"Lattitude": 52.356916, 
+		"Longtitude": 4.917841,
+		"Image": "http://www.smokinbarrels.nl/gallery/binnen_1.jpg"
+	},
+	{
+		"Name": "Louie Louie", 
+		"Adres": "Linnaeusstraat 11A 1093 EC Amsterdam", 
+		"Lattitude": 52.363024, 
+		"Longtitude": 4.923840,
+		"Image": "http://www.yourlittleblackbook.me/wp-content/uploads/2016/02/Louie-Louie-600x450-1-600x450.jpg"
+	},
+	{
+		"Name": "Rotisserie", 
+		"Adres": "Beukenplein 17 1092 Amsterdam", 
+		"Lattitude": 52.357170, 
+		"Longtitude": 4.918334,
+		"Image": "http://www.yourlittleblackbook.me/wp-content/uploads/2015/09/rotisserie-beukenplein-amsterdam-fb3.jpg"
+	},
+	{
+		"Name": "Elsa’s cafe", 
+		"Adres": "Middenweg 73 1098 AE Amsterdam", 
+		"Lattitude": 52.353119, 
+		"Longtitude": 4.931676,
+		"Image": "http://fast.mediamatic.nl/f/psjq/image/568/4046-572-426.jpg"
+	},
+	{
+		"Name": "Cafe Maxwell", 
+		"Adres": "Beukenplein 27 1092 BB Amsterdam", 
+		"Lattitude": 52.356803, 
+		"Longtitude": 4.918650,
+		"Image": "http://www.maxwellcafe.nl/heading/home_2.jpg"
+	},
+	{
+		"Name": "Bar restaurant 1900", 
+		"Adres": "Hogeweg 48HS 1098 CE Amsterdam", 
+		"Lattitude": 52.354839, 
+		"Longtitude": 4.933146,
+		"Image": "https://media-cdn.tripadvisor.com/media/photo-s/05/2a/5a/80/cafe-restaurant-1900.jpg"
+	},
+	{
+		"Name": "Cafe Pleinzicht", 
+		"Adres": "Borneostraat 112 1094 CR Amsterdam", 
+		"Lattitude": 52.363962, 
+		"Longtitude": 4.938453,
+		"Image": "http://img01.beerintheevening.com/48/482534b60d8499e2970270ec041c0859.jpg"
+	},
+	{
+		"Name": "Het Badhuis", 
+		"Adres": "Javaplein 21 1095 CJ Amsterdam", 
+		"Lattitude": 52.363527, 
+		"Longtitude": 4.939926,
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Badhuis_(voormalig)_Javaplein.jpg"
+	},
+	{
+		"Name": "Canvas", 
+		"Adres": "Wibautstraat 150 1091 GR Amsterdam", 
+		"Lattitude": 52.353774, 
+		"Longtitude": 4.911789,
+		"Image": "http://fast.mediamatic.nl/f/jcdv/image/097/46987-950-629.jpg"
+	},
+	{
+		"Name": "De Ysbreeker", 
+		"Adres": "Weesperzijde 23 1091 EC Amsterdam", 
+		"Lattitude": 52.357537, 
+		"Longtitude": 4.906767,
+		"Image": "http://www.deysbreeker.nl/wp-content/uploads/2014/01/beeld_home-1024x512.jpg"
+	},
+	{
+		"Name": "The Harbour Club", 
+		"Adres": "Cruquiusweg 67 1019 AT Amsterdam", 
+		"Lattitude": 52.369051, 
+		"Longtitude": 4.947536,
+		"Image": "http://theharbourclub.com/app/uploads/sites/2/2015/06/THC-Amsterdam-ND-Bar.jpg"
+	},
+	{
+		"Name": "Hesp", 
+		"Adres": "Weesperzijde 130-131 1091 ER Amsterdam", 
+		"Lattitude": 52.349849, 
+		"Longtitude": 4.912603,
+		"Image": "http://static1.persgroep.net/parool/image/101cd260-9c33-4f25-a04c-9a3daf1ddc12?width=664&height=374"
+	},
+	{
+		"Name": "Cafe van Zuylen", 
+		"Adres": "Torensteeg 8 1012 TH Amsterdam", 
+		"Lattitude": 52.374580, 
+		"Longtitude": 4.889874,
+		"Image": "http://www.iamsterdam.com/remote/ndtrc/Images/20101116/77904ad9-efac-4fb9-b6e1-f56a6f6f1a1c.jpg?width=701&height=394&scale=both&mode=crop&quality=70"
+	},
+	{
+		"Name": "Cafe Fonteyn", 
+		"Adres": "Nieuwmarkt 15 1011 JR Amsterdam", 
+		"Lattitude": 52.372361, 
+		"Longtitude": 4.900915,
+		"Image": "http://cafefonteyn.nl/wp-content/uploads/2015/10/Cafe_fonteyn_terras1.jpg"
+	},
+	{
+		"Name": "Terpentijn", 
+		"Adres": "Rokin 103 1012 KM Amsterdam", 
+		"Lattitude": 52.369777, 
+		"Longtitude": 4.892870,
+		"Image": "http://www.terpen-tijn.nl/restaurants/terpen-tijn/img/web/Restaurant.jpg?w=640"
+	},
+	{
+		"Name": "Cafe Hoppe", 
+		"Adres": "Spui 18-20 1012 XA Amsterdam", 
+		"Lattitude": 52.368804, 
+		"Longtitude": 4.888599,
+		"Image": "http://lacartemag.com/wp-content/uploads/2015/03/Photo-by-Molly-S-Van-Houweling.jpg"
+	},
+	{
+		"Name": "Cafe Struik", 
+		"Adres": "Rozengracht 160 1016 NJ Amsterdam", 
+		"Lattitude": 52.372948, 
+		"Longtitude": 4.878244,
+		"Image": "http://img1.eu.nelso.com/2010-10-05_08-12-24/DSC_0910_2010-10-05_08-53-11_640x428.JPG"
+	},
+			{
+		"Name": "ArtDeli Culture bites", 
+		"Adres": "Rokin 93 1012 KM Amsterdam", 
+		"Lattitude": 52.370069, 
+		"Longtitude": 4.892993,
+		"Image": "http://nachtbrakers.nl/content/uploads/2015/06/artdeli3-770x513.jpg"
+	},
+	{
+		"Name": "Le Patron", 
+		"Adres": "Vijzelgracht 63 1017 HP Amsterdam", 
+		"Lattitude": 52.360205, 
+		"Longtitude": 4.891307,
+		"Image": "http://img1.eu.nelso.com/2010-10-07_07-00-00/DSC_3525_2010-10-07_10-53-38_640x425.JPG"
+	},
+	{
+		"Name": "Cafe van Leeuwen", 
+		"Adres": "Keizersgracht 711 1017 DX Amsterdam", 
+		"Lattitude": 52.364065, 
+		"Longtitude": 4.898310,
+		"Image": "http://www.eatdrinketc.com/photos/rad6DC47.jpg"
+	},
+	{
+		"Name": "Cafe de Paris", 
+		"Adres": "Rokin 83 1012 KL Amsterdam", 
+		"Lattitude": 52.370367, 
+		"Longtitude": 4.893034,
+		"Image": "http://restaurateurs.iens.nl/static/photos/27553_0_9bee2316af0792795cd44361b87eeb68.jpg"
+	},
+	{
+		"Name": "Cafe Katoen", 
+		"Adres": "Oude Turfmarkt 153 1012 GC Amsterdam", 
+		"Lattitude": 52.367783, 
+		"Longtitude": 4.894173,
+		"Image": "http://2.bp.blogspot.com/-wBBYjWMRF8Q/T_S860cCQ4I/AAAAAAAAAH8/xpgKd-B_jj4/s1600/Schermafbeelding+2012-07-04+om+23.58.08.png"
+	},
+	{
+		"Name": "Cafe Langereis", 
+		"Adres": "Amstel 202 1017 AH Amsterdam", 
+		"Lattitude": 52.366129, 
+		"Longtitude": 4.900140,
+		"Image": "http://s3-media4.fl.yelpcdn.com/bphoto/V4pZLPPxKCYj4lGL5OI1Tw/348s.jpg"
+	},
+	{
+		"Name": "Cafe Sluyswacht", 
+		"Adres": "Jodenbreestraat 1 1011 NG Amsterdam", 
+		"Lattitude": 52.369864, 
+		"Longtitude": 4.901704,
+		"Image": "http://www.worldtravelimages.net/DSC08327.JPG"
+	},
+	{
+		"Name": "Bierfabriek", 
+		"Adres": "Rokin 75 1012 KL Amsterdam", 
+		"Lattitude": 52.370521, 
+		"Longtitude": 4.893209,
+		"Image": "http://imagene.youropi.com/bierfabriek-restaurant-amsterdam-1(p:restaurant,16000)(c:0).jpg"
+	},
+	{
+		"Name": "Cafe de Jaren", 
+		"Adres": "Nieuwe Doelenstraat 20-22 1012 CP Amsterdam", 
+		"Lattitude": 52.368069, 
+		"Longtitude": 4.895420,
+		"Image": "https://everplaces.com/users/10066deab62c4291afefa395575dffe8/places/fa9e523f3017420983aeb35debeb22ed/images/4b0badc7b8674345ab666a8c1ae34690.jpg"
+	},
+	{
+		"Name": "Cafe de Vergulde gaper", 
+		"Adres": "Prinsenstraat 30 1015 DD Amsterdam", 
+		"Lattitude": 52.378044, 
+		"Longtitude": 4.886556,
+		"Image": "http://s3-media4.fl.yelpcdn.com/bphoto/s6TXkY-2cSBLaOfpOVyHOQ/o.jpg"
+	},
+	{
+		"Name": "Cafe Weber", 
+		"Adres": "Marnixstraat 397 1017 PJ Amsterdam", 
+		"Lattitude": 52.364969, 
+		"Longtitude": 4.880611,
+		"Image": "http://hg2.com/wp-content/uploads/2015/07/amsterdam-drink-weber-2a.jpg"
+	},
+	{
+		"Name": "Cafe Lux", 
+		"Adres": "Marnixstraat 403 1017 PJ Amsterdam", 
+		"Lattitude": 52.364969, 
+		"Longtitude": 4.880611,
+		"Image": "http://barlux.nl/wp-content/uploads/2014/12/F_Lux-10-705x350.jpg"
+	},
+	{
+		"Name": "Hannekes Boom", 
+		"Adres": "Dijksgracht 4 1019 BS Amsterdam", 
+		"Lattitude": 52.376398, 
+		"Longtitude": 4.912525,
+		"Image": "http://4.bp.blogspot.com/-6Bad59dhqcg/T8T-YEkB08I/AAAAAAAARLU/Ycgd5Q-M1q4/s1600/DSC01312_1.jpg"
+	},
+	{
+		"Name": "Lion Noir", 
+		"Adres": "Reguliersdwarsstraat 28 1017 BM Amsterdam", 
+		"Lattitude": 52.366385, 
+		"Longtitude": 4.890447,
+		"Image": "http://www.tabletodesk.com/images/made/assets/uploads/portfolio/2014/08/Lion_Noir/LionNior20140805-Web-4_880_600_80_int_c1.jpg"
+	},
+	{
+		"Name": "Cafe Marcella", 
+		"Adres": "Amstelveld 21 1017 JD Amsterdam", 
+		"Lattitude": 52.362249, 
+		"Longtitude": 4.898286,
+		"Image": "http://img1.eu.nelso.com/2010-10-04_14-46-31/DSC_9883_2010-10-04_14-18-54_640x425.JPG"
+	},
+	{
+		"Name": "Roest", 
+		"Adres": "Jacob Bontiusplaats 1 1018 PL Amsterdam", 
+		"Lattitude": 52.371939, 
+		"Longtitude": 4.926452,
+		"Image": "http://www.amsterdamroest.nl/bg/Roest_Zomer2012_23_web.jpg"
+	},
+	{
+		"Name": "Gollem Proeflokaal", 
+		"Adres": "Overtoom 160-162 1054 HP Amsterdam", 
+		"Lattitude": 52.362347, 
+		"Longtitude": 4.873051,
+		"Image": "http://www.europeanbeerguide.net/holland/amsterda/Gollem_Proeflokaal_ext.jpg"
+	},
+			{
+		"Name": "Waterkant", 
+		"Adres": "Marnixstraat 246 1016 TL Amsterdam", 
+		"Lattitude": 52.370219, 
+		"Longtitude": 4.876949,
+		"Image": "https://admin.stedenintransitie.nl/wp-content/uploads/2015/01/Waterkant-.jpg"
+	},
+	{
+		"Name": "Cafe Parck", 
+		"Adres": "Overtoom 428 1054 JV Amsterdam", 
+		"Lattitude": 52.359997, 
+		"Longtitude": 4.863378,
+		"Image": "https://salsa.latinnet.nl/logos/o-1648-1524824_660638523999920_1900268175_n.jpg"
+	},
+	{
+		"Name": "De Ebeling", 
+		"Adres": "Overtoom 52 1054 HK Amsterdam", 
+		"Lattitude": 52.363341, 
+		"Longtitude": 4.876553,
+		"Image": "http://www.horecasupport.nl/admin_assets/hotspots/hotspots_slides/255-7-slide.jpg"
+	},
+	{
+		"Name": "Fier Amsterdam", 
+		"Adres": "De Clercqstraat 79 1053 AG Amsterdam", 
+		"Lattitude": 52.370354, 
+		"Longtitude": 4.867993,
+		"Image": "http://www.looselab.nl/wp-content/uploads/2013/10/Fier-Amsterdam-1.jpg"
+	},
+	{
+		"Name": "Van Mechelen", 
+		"Adres": "Sloterkade 96/97 1058 HK Amsterdam", 
+		"Lattitude": 52.352701, 
+		"Longtitude": 4.852456,
+		"Image": "http://www.bintihomeblog.com/wp-content/uploads/2015/02/cafemechelen-3.jpg"
+	},
+	{
+		"Name": "Ter Brugge", 
+		"Adres": "Overtoom 578 1054 LN Amsterdam", 
+		"Lattitude": 52.357993, 
+		"Longtitude": 4.855706,
+		"Image": "http://cafeterbrugge.nl/wp-content/uploads/2015/10/slide21.jpg"
+	},
+	{
+		"Name": "Cafe Thuys", 
+		"Adres": "De Clercqstraat 129 1053 AK Amsterdam", 
+		"Lattitude": 52.369891, 
+		"Longtitude": 4.865387,
+		"Image": "http://sterkeclercq.nl/data/upload/pageimages/41/0.jpg"
+	},
+	{
+		"Name": "Bar Spek", 
+		"Adres": "Admiraal de Ruijterweg 1, 1057 Amsterdam", 
+		"Lattitude": 52.370132, 
+		"Longtitude": 4.864481,
+		"Image": "http://imgserv9.tcdn.nl/v1/WpTdm7o0vxIukf0W92I9q-6mZ8Y=/fit-in/900x900/filters:no_upscale()/http://metronieuws.tcdn.nl/field/gallery/5c604d6e1424bf199abf85984cd9894e-1430915143.jpg"
+	},
+	{
+		"Name": "Du Cap", 
+		"Adres": "Kwakersplein 2H 1053 TZ Amsterdam", 
+		"Lattitude": 52.369107, 
+		"Longtitude": 4.870360,
+		"Image": "https://s-media-cache-ak0.pinimg.com/736x/44/12/5a/44125a4257d595d0b84aa79ec0382fe7.jpg"
+	},
+	{
+		"Name": "Rotisserie West", 
+		"Adres": "De Clercqstraat 81 1053 AG Amsterdam", 
+		"Lattitude": 52.370332, 
+		"Longtitude": 4.867885,
+		"Image": "http://www.yourlittleblackbook.me/wp-content/uploads/2015/09/rotisserie-beukenplein-amsterdam-fb2-600x450.jpg"
+	},
+	{
+		"Name": "Kade West", 
+		"Adres": "Kinkerstraat 87I 1053 DH Amsterdam", 
+		"Lattitude": 52.366827, 
+		"Longtitude": 4.871261,
+		"Image": "http://www.eetcafe-kade-west-amsterdam.nl/files/gallery/2703/eetcafe-kade-west-amsterdam-groep-terras_F6587_large.jpg"
+	},
+	{
+		"Name": "Golden Brown", 
+		"Adres": "Jan Pieter Heijestraat 146 1054 WT Amsterdam", 
+		"Lattitude": 52.361769, 
+		"Longtitude": 4.864367,
+		"Image": "http://restaurateurs.iens.nl/static/photos/23466_0_d0fe84186cbbbd94c2acd68d0bc388d0.jpg"
+	},
+	{
+		"Name": "Cafe Lennep", 
+		"Adres": "Jacob van Lennepkade 334 1053 NJ Amsterdam", 
+		"Lattitude": 52.363010, 
+		"Longtitude": 4.862135,
+		"Image": "http://amsterdamcurated.nl/wp-content/uploads/2014/08/Cafe-lennep-amsterdam.jpg"
+	},
+	{
+		"Name": "Brandstof", 
+		"Adres": "Marnixstraat 341 1016 TD Amsterdam", 
+		"Lattitude": 52.372527, 
+		"Longtitude": 4.876070,
+		"Image": "http://imgserv9.tcdn.nl/v1/-XiBafitnZV5WzsANBn7jPwCmJc=/fit-in/900x900/filters:no_upscale()/http://metronieuws.tcdn.nl/field/gallery/b8a38cf980f3c858e3a553a9d7fef0ba-1429703120.jpg"
+	},
+	{
+		"Name": "Remise 47", 
+		"Adres": "De Hallen Bellamyplein 47 1053 AT Amsterdam", 
+		"Lattitude": 52.367757, 
+		"Longtitude": 4.868217,
+		"Image": "http://static.jan-magazine.nl/thumbnails/genjArticle/detail/59/18/00/hotspot-remise-47-1859.jpg"
+	},
+	{
+		"Name": "Staring at Jacob", 
+		"Adres": "Jacob van Lennepkade 215 1054 ZP Amsterdam", 
+		"Lattitude": 52.362423, 
+		"Longtitude": 4.861958,
+		"Image": "https://farm4.staticflickr.com/3892/14665179103_b76aa6b312_o.jpg"
+	},
+	{
+		"Name": "Westergas Terras", 
+		"Adres": "Klönneplein 6 1014 DD Amsterdam", 
+		"Lattitude": 52.386808, 
+		"Longtitude": 4.870138,
+		"Image": "http://dump.partyflock.nl/4805/Westergas%20terras.jpg"
+	},
+	{
+		"Name": "Mossels & Gin", 
+		"Adres": "Gosschalklaan 12 1014 DC Amsterdam", 
+		"Lattitude": 52.386449, 
+		"Longtitude": 4.868042,
+		"Image": "http://bysam.nl/wp-content/uploads/2014/05/P5094896.jpg"
+	},
+			{
+		"Name": "Pacific Parc", 
+		"Adres": "Polonceaukade 23 1014 DA Amsterdam", 
+		"Lattitude": 52.385755, 
+		"Longtitude": 4.871448,
+		"Image": "http://upload.spottedbylocals.com/Amsterdam/normal/pacific-parc-amsterdam-(by-gisela-clarke).jpg"
+	},
+	{
+		"Name": "Floor 17", 
+		"Adres": "Staalmeesterslaan 410 1057 PH Amsterdam", 
+		"Lattitude": 52.368123, 
+		"Longtitude": 4.844008,
+		"Image": "http://www.ramada-amsterdam.com/assets/Nieuwe-Ramada-Fotos/verkleinde-fotos/1000x360ramada2014rooftop01.jpg"
+	},
+	{
+		"Name": "Bar Baarsch", 
+		"Adres": "Jan Evertsenstraat 91 1057 BS Amsterdam", 
+		"Lattitude": 52.370440, 
+		"Longtitude": 4.853516,
+		"Image": "http://www.cityhotspotter.com/wp-content/uploads/2012/03/Bar-Baarsch-Inside.jpg"
+	},
+	{
+		"Name": "Cafe Zurich", 
+		"Adres": "Mercatorplein 2B 1057 CB Amsterdam", 
+		"Lattitude": 52.369273, 
+		"Longtitude": 4.851797,
+		"Image": "https://d6zktcp1soofu.cloudfront.net/cafe-zurich-6604/landscape.gtLR5_landscape.jpg"
+	},
+	{
+		"Name": "De Liefde Amsterdam", 
+		"Adres": "Bilderdijkstraat 7 1052 NA Amsterdam", 
+		"Lattitude": 52.371485, 
+		"Longtitude": 4.870331,
+		"Image": "http://restaurateurs.iens.nl/static/photos/32628_0_40253be79ec5f11748eb982f1b6e4123.jpg"
+	},
+	{
+		"Name": "Edel", 
+		"Adres": "Postjesweg 1 1057 DT Amsterdam", 
+		"Lattitude": 52.364415, 
+		"Longtitude": 4.858947,
+		"Image": "http://api.refresh-it.nl/files/client/c59ff74b5494563fbef4978c563121c2/frontpage/1039"
+	},
+	{
+		"Name": "Sound Garden", 
+		"Adres": "Marnixstraat 164-166 1016 TG Amsterdam", 
+		"Lattitude": 52.372949, 
+		"Longtitude": 4.875803,
+		"Image": "http://media.afar.com/uploads/images/post_images/images/oNGc96knFV/post_display_cropped_open-uri20130919-22770-1s8957f?1383825863"
+	},
+	{
+		"Name": "Cafe Flamingo", 
+		"Adres": "1e Van der Helststraat 37 1073 AC Amsterdam", 
+		"Lattitude": 52.355412, 
+		"Longtitude": 4.893353,
+		"Image": "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xla1/t31.0-8/s960x960/1559554_1246253178736038_8337623446822525450_o.jpg"
+	},
+	{
+		"Name": "Bar Mash", 
+		"Adres": "Gerard Douplein 9HS 1073 XE Amsterdam", 
+		"Lattitude": 52.356064, 
+		"Longtitude": 4.893044,
+		"Image": "http://www.yourlittleblackbook.me/wp-content/uploads/2014/06/bar-mash-amsterdam.jpg"
+	},
+	{
+		"Name": "De groene vlinder", 
+		"Adres": "Albert Cuypstraat 130 1072 EA Amsterdam", 
+		"Lattitude": 52.355329, 
+		"Longtitude": 4.892912,
+		"Image": "http://cafe-de-groene-vlinder.nl/wp-content/uploads/2015/10/slide1.jpg"
+	},
+	{
+		"Name": "De Duvel", 
+		"Adres": "Eerste van der Helststraat 59-61 1073 AD Amsterdam", 
+		"Lattitude": 52.354813, 
+		"Longtitude": 4.893587,
+		"Image": "http://www.horecarbo.nl/wp-content/uploads/2015/11/DSC97772010-10-0413-31-36640x425.jpg"
+	},
+	{
+		"Name": "Calle Ocho", 
+		"Adres": "Albert Cuypstraat 226I 1073 BN Amsterdam", 
+		"Lattitude": 52.356292, 
+		"Longtitude": 4.896989,
+		"Image": "https://media-cdn.tripadvisor.com/media/photo-s/09/c2/75/4b/calle-ocho.jpg"
+	},
+	{
+		"Name": "Ruis", 
+		"Adres": "Van der Helstplein 9 1073 AR Amsterdam", 
+		"Lattitude": 52.351809, 
+		"Longtitude": 4.895116,
+		"Image": "http://www.relaxe.nl/wp-content/uploads/job_listings/2015/03/Caf%C3%A9-Ruis.jpg"
+	},
+	{
+		"Name": "Boca’s Park", 
+		"Adres": "Sarphatipark 4 1072 PA Amsterdam", 
+		"Lattitude": 52.354401, 
+		"Longtitude": 4.893715,
+		"Image": "http://www.amsterdamstylehunter.com/wp-content/uploads/2016/01/bocas4.jpg"
+	},
+	{
+		"Name": "Gambrinus", 
+		"Adres": "Ferdinand Bolstraat 180, 1072 LV Amsterdam", 
+		"Lattitude": 52.351409, 
+		"Longtitude": 4.891364,
+		"Image": "http://www.cityhotspotter.com/wp-content/uploads/2012/01/Gambrinus-Window.jpg"
+	},
+	{
+		"Name": "Het Paardje", 
+		"Adres": "Gerard Douplein 1, 1073 XE Amsterdam", 
+		"Lattitude": 52.356158, 
+		"Longtitude": 4.892704,
+		"Image": "http://imgserv9.tcdn.nl/v1/yqGo0bQprkOxxdZRXVlASx632xo=/fit-in/900x900/filters:no_upscale()/http://metronieuws.tcdn.nl/field/gallery/a84acea108ec5189ad4bb3ba2843c804-1430312401.jpg"
+	},
+	{
+		"Name": "Brouwerij Trooost", 
+		"Adres": "Cornelis Troostplein 21 1072 JJ Amsterdam", 
+		"Lattitude": 52.350663, 
+		"Longtitude": 4.891000,
+		"Image": "http://bysam.nl/wp-content/uploads/2014/04/IMG_4986.jpg"
+	},
+	{
+		"Name": "Cafe Schilders", 
+		"Adres": "Eerste van der Helststraat 45 1073 AC Amsterdam", 
+		"Lattitude": 52.355251, 
+		"Longtitude": 4.893373,
+		"Image": "http://bysam.nl/wp-content/uploads/2013/03/P3060781.jpg"
+	},
+	{
+		"Name": "Cafe Sarphaat", 
+		"Adres": "Ceintuurbaan 157-A 1072 GB Amsterdam", 
+		"Lattitude": 52.354401, 
+		"Longtitude": 4.899216,
+		"Image": "http://www.dutchamsterdam.nl/i/aa/cafesarphaatamsterdam.jpg"
+	},
+	{
+		"Name": "Flinck", 
+		"Adres": "Eerste van der Helststraat 511 1073 AD Amsterdam", 
+		"Lattitude": 52.356536, 
+		"Longtitude": 4.899467,
+		"Image": "http://www.glasatelier-shining.nl/galerij/index.php?gallery=glas%20in%20lood%2F&image=Cafe%20Flinck%20voor.jpg&cmd=image"
+	},
+	{
+		"Name": "Cafe de Pijp", 
+		"Adres": "Ferdinand Bolstraat 17-19 1072 LA Amsterdam", 
+		"Lattitude": 52.356536, 
+		"Longtitude": 4.899467,
+		"Image": "https://media-cdn.tripadvisor.com/media/photo-s/03/ee/3d/0d/cafe-de-pijp.jpg"
+	},
+	{
+		"Name": "Cafe Binnen Buiten", 
+		"Adres": "Ruysdaelkade 115 1072 AN Amsterdam,Nederland", 
+		"Lattitude": 52.354901, 
+		"Longtitude": 4.887106,
+		"Image": "http://media-cdn.tripadvisor.com/media/photo-s/06/bd/f8/a1/amsterdam-apartments.jpg"
+	},
+			{
+		"Name": "Gent aan de Schinkel", 
+		"Adres": "Theophile de Bockstraat 1 1058 TV Amsterdam", 
+		"Lattitude": 52.354856, 
+		"Longtitude": 4.849900,
+		"Image": "https://www.amsterdamheefthet.nl/uploads/large/cafe_gent.jpg"
+	},
+	{
+		"Name": "George W.P.A.", 
+		"Adres": "Willemsparkweg 74 1071 Amsterdam", 
+		"Lattitude": 52.357300, 
+		"Longtitude": 4.874505,
+		"Image": "http://www.cafegeorge.nl/Restaurants/georgewpa/img/web/george1.jpg?w=960"
+	},
+	{
+		"Name": "Vondelpark 3", 
+		"Adres": "Vondelpark 3 1071 AA Amsterdam", 
+		"Lattitude": 52.361035, 
+		"Longtitude": 4.874989,
+		"Image": "http://www.amsterdamnow.com/wp-content/uploads/2015/03/vondelpark3.jpg"
+	},
+	{
+		"Name": "Carter Bar & Kitchen", 
+		"Adres": "Valeriusstraat 85 1071 Amsterdam", 
+		"Lattitude": 52.354169, 
+		"Longtitude": 4.869220,
+		"Image": "http://barcarter.nl/wp-content/uploads/2014/04/140707031-Porter-Bar-and-Kitchen.jpg"
+	},
+	{
+		"Name": "Jack Dish", 
+		"Adres": "Stadionplein 19 1076 CG Amsterdam", 
+		"Lattitude": 52.344434, 
+		"Longtitude": 4.858481,
+		"Image": "http://www.yourlittleblackbook.me/wp-content/uploads/2015/07/jack-dish-amsterdam-header1-600x450.jpg"
+	},
+	{
+		"Name": "Cafe Schinkelhaven", 
+		"Adres": "Amstelveenseweg 126 1075 XL Amsterdam", 
+		"Lattitude": 52.354833,
+		"Longtitude": 4.855371,
+		"Image": "https://www.amsterdamheefthet.nl/uploads/large/schinkelhaven_cafe.jpg"
+	},
+	{
+		"Name": "Blaffende vis", 
+		"Adres": "Westerstraat 118 1015 MN Amsterdam", 
+		"Lattitude": 52.378446, 
+		"Longtitude": 4.883297,
+		"Image": "http://www.cityhotspotter.com/wp-content/uploads/2012/04/Blaffende-Vis-Terrace.jpg"
+	},
+	{
+		"Name": "Louis", 
+		"Adres": "Singel 43 1012 VC Amsterdam", 
+		"Lattitude": 52.377000, 
+		"Longtitude": 4.892389,
+		"Image": "http://louis-amsterdam.nl/img/background/1.jpg"
+	},
+	{
+		"Name": "De Twee Zwaantjes", 
+		"Adres": "Prinsengracht 114 1015 EA Amsterdam", 
+		"Lattitude": 52.376339, 
+		"Longtitude": 4.884273,
+		"Image": "http://www.photodam.com/foto/14062013-02.jpg"
+	},
+	{
+		"Name": "Cafe Winkel", 
+		"Adres": "Noordermarkt 43 1015 NA Amsterdam", 
+		"Lattitude": 52.379076, 
+		"Longtitude": 4.886205,
+		"Image": "http://8384-presscdn-0-76.pagely.netdna-cdn.com/wp-content/uploads/2014/09/Outside-Cafe-Winkel-in-Amsterdam-1000-e1411469626961.jpg"
+	},
+	{
+		"Name": "De Kat in ’t wijngaert", 
+		"Adres": "Lindengracht 160 1015 KL Amsterdam", 
+		"Lattitude": 52.380290, 
+		"Longtitude": 4.884152,
+		"Image": "http://img1.eu.nelso.com/2010-10-05_08-12-24/DSC_1530_2010-10-05_11-52-13_640x428.JPG"
+	},
+	{
+		"Name": "Cafe Thijssen", 
+		"Adres": "Brouwersgracht 107 1015 GD Amsterdam", 
+		"Lattitude": 52.380756, 
+		"Longtitude": 4.887584,
+		"Image": "http://imagene.youropi.com/thijssen-uitgaan-amsterdam-1(p:club,14626)(c:0).jpg"
+	},
+	{
+		"Name": "Cafe Brandon", 
+		"Adres": "Keizersgracht 157 1015 CL Amsterdam", 
+		"Lattitude": 52.375410, 
+		"Longtitude": 4.886439,
+		"Image": "http://s3-media4.fl.yelpcdn.com/bphoto/m71apQ8IANO88fSUdQaDGw/o.jpg"
+	},
+	{
+		"Name": "Cafe Wester", 
+		"Adres": "Nieuwe Leliestraat 2 1015 SP Amsterdam", 
+		"Lattitude": 52.376019, 
+		"Longtitude": 4.883874,
+		"Image": "https://c1.staticflickr.com/8/7067/14115478624_796387ec8a_b.jpg"
+	},
+	{
+		"Name": "Cafe Proust", 
+		"Adres": "Noordermarkt 4 1015 MV Amsterdam", 
+		"Lattitude": 52.380178, 
+		"Longtitude": 4.887605,
+		"Image": "https://c2.staticflickr.com/8/7570/15601671300_35a56aeb34_b.jpg"
+	},
+	{
+		"Name": "Cafe de Prins", 
+		"Adres": "Prinsengracht 124 1015 EA Amsterdam", 
+		"Lattitude": 52.376162, 
+		"Longtitude": 4.884110,
+		"Image": "http://www.deprins.nl/wp-content/uploads/photo-gallery/cafe-de-prins-outside.jpg"
+	},
+	{
+		"Name": "Cafe ’t Smalle", 
+		"Adres": "Egelantiersgracht 12 1015 RL Amsterdam", 
+		"Lattitude": 52.376722, 
+		"Longtitude": 4.884134,
+		"Image": "https://www.rentaboatamsterdam.com/uploads/location/photo/32/t_smalle.jpg"
+	},
+	{
+		"Name": "Cafe Penris", 
+		"Adres": "Westerstraat 270 1015 MT Amsterdam", 
+		"Lattitude": 52.377843, 
+		"Longtitude": 4.879524,
+		"Image": "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/12987150_1003231353093050_4376097844813996076_n.jpg?oh=a33c4d2ad2d49e119a64a26575fb7f90&oe=5781F10C&__gda__=1471624499_7935de4bbff08e8a0460cf179fb8b85b"
+	},
+			{
+		"Name": "Tolhuistuin", 
+		"Adres": "IJpromenade 2 1031 KT Amsterdam", 
+		"Lattitude": 52.384543, 
+		"Longtitude": 4.901187,
+		"Image": "http://www.stichtingtolhuistuin.nl/wp-content/uploads/Opening_39_BHeemskerk_FB-1280x550.jpg"
+	},
+	{
+		"Name": "Cafe de Ceuvel", 
+		"Adres": "Korte Papaverweg 4 1032 KB Amsterdam", 
+		"Lattitude": 52.393519, 
+		"Longtitude": 4.910709,
+		"Image": "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads/2014/08/ceuvel.jpg"
+	},
+	{
+		"Name": "Cafe-restaurant Stork", 
+		"Adres": "Gedempt Hamerkanaal 201 1021 KP Amsterdam", 
+		"Lattitude": 52.383858, 
+		"Longtitude": 4.919742,
+		"Image": "http://kromhouthal.com/wp-content/uploads/2014/04/STORK_03.jpg"
+	},
+	{
+		"Name": "Pllek", 
+		"Adres": "Tt. Neveritaweg 59 1033 WB Amsterdam", 
+		"Lattitude": 52.399350, 
+		"Longtitude": 4.892938,
+		"Image": "http://www.horecasupport.nl/admin_assets/hotspots/hotspots_slides/237-1-slide.jpg"
+	}
+]

@@ -1,16 +1,24 @@
+// import data from "../../../public/data/cafes.json";
+
+// var cafes = data;
+
+// console.log(cafes);
+
+// Meteor.call('addExternCafes', data);
+
 Template.addCafe.events ({
     "submit .add-cafe": function(event){
         event.preventDefault()
         
-        var name = event.target.name.value,
-        address = document.getElementById("address").value,
-        imgUrl = event.target.imgUrl.value,
-        lat = event.target.lat.value,
-        lng = event.target.lng.value,
+        var Name = event.target.name.value,
+        Adres = document.getElementById("address").value,
+        Image = event.target.imgUrl.value,
+        Lattitude = event.target.lat.value,
+        Longtitude = event.target.lng.value,
         sunrise = event.target.sunrise.value,
         sunset = event.target.sunset.value;
 
-        Meteor.call('addCafe', name, address, imgUrl, lat, lng, sunrise, sunset);
+        Meteor.call('addCafe', Name, Adres, Image, Lattitude, Longtitude, sunrise, sunset);
 
         alert("Cafe Toegevoegd");
 
@@ -21,7 +29,7 @@ Template.addCafe.events ({
         event.target.sunrise.value = '';
         event.target.sunset.value = '';
 
-        return Router.go('/');
+        return Router.go('/cafesMap');
 
     },
 
@@ -39,7 +47,7 @@ function showResult(result) {
 
 function getLatitudeLongitude(callback, address) {
     // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
-    address = address || 'Ferrol, Galicia, Spain';
+    // address = address || 'Ferrol, Galicia, Spain';
     // Initialize the Geocoder
     geocoder = new google.maps.Geocoder();
     if (geocoder) {

@@ -1,2 +1,2 @@
 Cafes = new Mongo.Collection('Cafes');
-Attendants = new Mongo.Collection('Attendants');
+// ExternCafes = new Mongo.Collection('ExternCafes');

@@ -4,28 +4,169 @@
 
 h1, h2, h3, h4, h5 {
   font-family: 'Monserrat', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p, a, span {
   font-family: 'Open Sans', sans-serif;
 }
 
-#cafe-page {
+body {
+  background-color: rgba(255, 193, 7, 0.07);
+}
+
+#cafe-page .content {
   padding: 1em;
 }
 
-.remove-cafe {
+.navbar-default .navbar-nav > li > a, .login-link-text {
+  color: white;
+}
+
+.cafesListContent h2 {
+  padding: 1em;
+}
+
+.cafesListContent ul {
+  width: 100%;
+    padding: 0;
+}
+
+.cafesListContent button#btn {
+  margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.cafesListContent ul li {
+    background-color: #95E1D3;
+    padding: 2em;
+    color: white;
+    position: relative;
+}
+
+.cafesListContent ul li a {
+  color: white;
+}
+
+.removeCafe {
+  position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 20px;
+}
+
+.cafesListContent ul li:nth-child(2n+1) {
+    background-color: #29D2E4;
+}
+
+.removeCafe {
   border: none;
   background-color: transparent;
 }
 
-/* CSS declarations go here */
-#site_header {
+.weatherData {
+  margin-top: 4em;
   display: flex;
-  background: #333;
-  color: white;
-  justify-content: space-between;
-  padding: 0.75em 3em 0em 3em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.weatherData .weatherItem {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+.weatherData .weatherItem img {
+  margin: auto;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-right li {
+  padding: 15px 0px;
+}
+
+.navbar-default {
+  background-color: #FFB26B;
+  border: 0px;
+  border-bottom: 4px solid #E69245;
+  border-radius: 0px;  
+}
+
+form, .getLatLng {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 45em;
+    margin: auto;
+}
+
+.getLatLng {
+  flex-direction: row;
+}
+
+.getLatLng label {
+  width: 100%;
+}
+
+.getLatLng input {
+  width: 80%;
+}
+
+.getLatLng #btn {
+    width: 20%;
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #95E1D3;
+    padding: 10px 20px;
+    border: 3px solid #95E1D3;
+    text-transform: uppercase;
+    color: white;
+}
+
+#addCafePage {
+  padding: 50px 0px;
+}
+
+#btn, input[type=submit] {
+      background-color: transparent;
+    padding: 10px 20px;
+    border: 3px solid #95E1D3;
+    text-transform: uppercase;
+    color: #95E1D3;
+}
+
+#btn:hover, #btn:active, #btn:focus,
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
+   background-color: #95E1D3;
+    padding: 10px 20px;
+    border: 3px solid #95E1D3;
+    text-transform: uppercase;
+    color: white;
+}
+
+input {
+  padding: 10px 20px;
+    border: 3px solid #DDDDDD;
+        margin: 10px 0px;
+}
+
+#cafe-page header {
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
 }
 
 #header_nav ul {
@@ -55,5 +196,5 @@ p, a, span {
 .map-container {
   width: 100%;
   max-width: 100%;
-  height: 500px;
+  height: 100vh;
 }
