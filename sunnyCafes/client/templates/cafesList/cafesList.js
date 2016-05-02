@@ -1,8 +1,13 @@
+import data from "../../../public/data/cafes.json";
+var cafes = data;
+
+Meteor.call('addExternCafes', data);    
+
 Template.cafesList.helpers ({
   	Cafes: function(){
     	return Cafes.find({});
   	}
-})
+});
 
 Template.cafesList.events ({
   	"click .removeCafe": function(event){
@@ -11,7 +16,7 @@ Template.cafesList.events ({
     	}
     	return false;
   	}
-})
+});
 
 Template.cafesList.events ({
 	"click .cafeItem": function(event) {
@@ -19,7 +24,7 @@ Template.cafesList.events ({
 		var lat = document.getElementById("lat").innerHTML;
 		var lng = document.getElementById("lng").innerHTML;
 
-		Meteor.call('checkCurrentWeather', lat, lng, callback)
+		Meteor.call('checkCurrentWeather', lat, lng, callback);
 
 		function callback (err, res) {
 	    	if (err) {
@@ -31,7 +36,4 @@ Template.cafesList.events ({
 	    	weatherData = Session.get('weather');
 		}
 	}
-})
-
-
-
+});

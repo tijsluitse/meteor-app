@@ -1,3 +1,11 @@
+var SunCalc = require('suncalc');
+
+Template.cafesMap.helpers ({
+  	Cafes: function(){
+    	return Cafes.find({});
+  	}
+})
+
 Meteor.startup(function() {  
   	GoogleMaps.load();
   	setInterval(function(){
@@ -20,8 +28,7 @@ Template.cafesMap.helpers({
 	    	var lngPosition = Session.get('lngPos');
 	      	return {
 	        	center: new google.maps.LatLng(latPosition, lngPosition),
-	        	zoom: 12,
-	        	scrollwheel: false
+	        	zoom: 12
 	      	};
 	    }
   	}
@@ -34,45 +41,24 @@ Template.cafesMap.onCreated(function() {
     	var allPlaces = Cafes.find().fetch();
     	var latPosition = Session.get('latPos');
 	    var lngPosition = Session.get('lngPos');
-
-	    // map.instance.set('styles', [
-		   //    {
-		   //      featureType: 'road',
-		   //      elementType: 'geometry',
-		   //      stylers: [
-		   //        { color: '#F38181' },
-		   //        { weight: 0 }
-		   //      ]
-		   //    }, {
-		   //      featureType: 'road',
-		   //      elementType: 'labels',
-		   //      stylers: [
-		   //        { color: '#F38181' },
-		   //        { saturation: 1 },
-		   //        { visibility: 'on' }
-		   //      ]
-		   //    }, {
-		   //      featureType: 'landscape',
-		   //      elementType: 'all',
-		   //      stylers: [
-		   //        { color: 'rgb(227,227,277)' },
-		   //        { gamma: 0 },
-		   //        { saturation: -10000 },
-		   //        { lightness: 0 }
-		   //      ]
-		   //    }, {
-		   //      featureType: 'water',
-		   //      elementType: 'all',
-		   //      stylers: [
-		   //        { color: '#95E1D3' },
-		   //        { gamma: 0 },
-		   //        { saturation: 1 },
-		   //        { lightness: 0 }
-		   //      ]
-		   //    }
-		   //  ]);
+	    var date = new Date();
 
     	allPlaces.forEach(function(singlePlace){
+
+    		var sunTimes = SunCalc.getTimes(date, singlePlace.Lattitude, singlePlace.Longtitude);
+    		
+    		Meteor.call('checkCurrentWeather', singlePlace.Lattitude, singlePlace.Longtitude, callback);
+    		Meteor.call('setSunTimes', singlePlace._id, sunTimes.sunrise, sunTimes.sunset)
+
+    		function callback (err, res) {
+		    	if (err) {
+		       	 	console.log(err);
+		        	return false;
+		    	}
+		    	Session.set('weather', res);
+			}
+
+			weatherData = Session.get('weather');
 
     		var marker = new google.maps.Marker({
 		       	draggable: false,
@@ -86,12 +72,14 @@ Template.cafesMap.onCreated(function() {
 		    var content = 
 			    '<a class="cafeMapItem" href="' + '/singleCafe/' + singlePlace._id + '">' +
 			    '<div id="content">' +
-	            '<h1 id="firstHeading" class="firstHeading">'+ singlePlace.Name +'</h1>' +
-	            '<p>Address: ' + singlePlace.Adres + '</p>' +
-	            '<div id="bodyContent">'+
+	            '<h1 id="firstHeading" class="firstHeading">'+ singlePlace.Name + '</h1>' +	       
+	            '<p id="coordinates">Coordinates: ' + '<span id="lat">' + singlePlace.Lattitude + '</span>, <span id="lng"> ' + singlePlace.Longtitude + '</span></p>' + 
+	            '<div id="bodyContent">' +
 	     		'<img id="infoWindowImage" src="' + singlePlace.Image + '" alt="' + singlePlace.Name + '"/>' +
-	     		'<p>Sunrise: ' + singlePlace.sunrise + '</p>' +
-	     		'<p>Sunset: ' + singlePlace.sunset + '</p>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/pin.svg"><p>Address: ' + singlePlace.Adres + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/sunrise.svg"><p>Sun: ' + sunTimes.sunrise + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/sunset.svg"><p>Till: ' + sunTimes.sunset + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/temp.svg"><p>Temp: ' + weatherData.main.temp + '</p></span>' +
 	            '</div>' +
 	            '</div>' +
 	            '</a>';
@@ -105,8 +93,8 @@ Template.cafesMap.onCreated(function() {
 		        infoWindow.open(map.instance, marker);
 		    });
 	
-		    map.instance.addListener('click', function() {	            
-		        infoWindow.close();
+		    marker.addListener('mouseout', function() {
+		        // infoWindow.close();
 		    });
 		   	
     	});
@@ -117,7 +105,6 @@ Template.cafesMap.onCreated(function() {
 	       	class: "maps-marker current-position",
 	       	position: new google.maps.LatLng(latPosition, lngPosition),
 	       	map: map.instance	       
-	       	// icon: "images/pin.png"
 	   	});
 
   	});
@@ -129,7 +116,7 @@ Template.cafesMap.events({
 		var lat = document.getElementById("lat").innerHTML;
 		var lng = document.getElementById("lng").innerHTML;
 
-		Meteor.call('checkCurrentWeather', lat, lng, callback)
+		Meteor.call('checkCurrentWeather', lat, lng, callback);
 
 		function callback (err, res) {
 	    	if (err) {

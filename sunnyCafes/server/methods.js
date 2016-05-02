@@ -1,5 +1,4 @@
 Cafes = new Mongo.Collection('Cafes');
-// ExternCafes = new Mongo.Collection('ExternCafes');
 
 Meteor.methods({
     addCafe: function(Name, Address, Image, Lattitude, Longtitude, sunrise, sunset){
@@ -38,25 +37,19 @@ Meteor.methods({
         }
     },
 
-    // addExternCafes: function(cafes) {
-    //     cafes.forEach(function(cafe) {
-    //         Cafes.insert(cafe);
-    //     });
-    // },
-
-    sunriseInput: function(cafeId, sunriseTime){
-        Cafes.update({
-            _id: cafeId}, 
-            { $push: {
-                sunrise: sunriseTime
-            }
-        });
+    addExternCafes: function(cafes) {
+        if (Cafes.find().fetch().length == 0) {
+            cafes.forEach(function(cafe) {
+                Cafes.insert(cafe);
+            });
+        }
     },
 
-    sunsetInput: function(cafeId, sunsetTime){
+    setSunTimes: function(cafeId, sunriseTime, sunsetTime) {
         Cafes.update({
             _id: cafeId}, 
             { $push: {
+                sunrise: sunriseTime,
                 sunset: sunsetTime
             }
         });
