@@ -7,13 +7,16 @@
     {{else}}
         <h2>U moet eerst inloggen om cafes toe te voegen</h2>
     {{/if}}
-    <ul>
+    <ul class="sortby-{{sort}}">
         {{#each Cafes}}
         <li>
           <a href='/singleCafe/{{_id}}' class="cafeItem">
             <span>Name: {{Name}}</span><br />
             <span>Address: {{Adres}}</span><br />
-            <span>Location: </span><span id="lat">{{Lattitude}}</span> - <span id="lng">{{Longtitude}}</span>
+            <span>Location: </span><span id="lat">{{Lattitude}}</span> - <span id="lng">{{Longtitude}}</span><br />
+            <span>Temprature: {{temprature}}</span><br />
+            <span>Weather: {{weather}}</span><br />
+            <span>Wind: {{wind}}</span>
         </a>
             {{#if currentUser}}
                 <button class="removeCafe">X</button>

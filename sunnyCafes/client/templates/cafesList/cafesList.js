@@ -17,23 +17,3 @@ Template.cafesList.events ({
     	return false;
   	}
 });
-
-Template.cafesList.events ({
-	"click .cafeItem": function(event) {
-		
-		var lat = document.getElementById("lat").innerHTML;
-		var lng = document.getElementById("lng").innerHTML;
-
-		Meteor.call('checkCurrentWeather', lat, lng, callback);
-
-		function callback (err, res) {
-	    	if (err) {
-	       	 	console.log(err);
-	        	return false;
-	    	}
-
-	    	Session.set('weather', res);
-	    	weatherData = Session.get('weather');
-		}
-	}
-});

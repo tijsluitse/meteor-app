@@ -6,28 +6,15 @@ Template.cafesMap.helpers ({
   	}
 })
 
-Meteor.startup(function() {  
-  	GoogleMaps.load();
-  	setInterval(function(){
-  		navigator.geolocation.getCurrentPosition(function (data) { 
-            
-	        var latPos = data['coords']['latitude'];
-	        var lngPos = data['coords']['longitude'];
-
-	        Session.set('latPos', latPos);
-	        Session.set('lngPos', lngPos);
-
-	    }); 
-  	}, 5000);
+Meteor.startup(function() {    	
+	GoogleMaps.load();
 });
 
-Template.cafesMap.helpers({  
+Template.cafesMap.helpers({ 
   	mapOptions: function() {
 	    if (GoogleMaps.loaded()) {
-	    	var latPosition = Session.get('latPos');
-	    	var lngPosition = Session.get('lngPos');
 	      	return {
-	        	center: new google.maps.LatLng(latPosition, lngPosition),
+	        	center: new google.maps.LatLng(52.367153, 4.893645),
 	        	zoom: 12
 	      	};
 	    }
@@ -43,22 +30,42 @@ Template.cafesMap.onCreated(function() {
 	    var lngPosition = Session.get('lngPos');
 	    var date = new Date();
 
+	    var currentPosition = new google.maps.Marker({
+	       	draggable: false,
+	       	animation: google.maps.Animation.DROP,
+	       	class: "maps-marker current-position",
+	       	position: new google.maps.LatLng(latPosition, lngPosition),
+	       	map: map.instance	       
+	   	});
+
     	allPlaces.forEach(function(singlePlace){
 
-    		var sunTimes = SunCalc.getTimes(date, singlePlace.Lattitude, singlePlace.Longtitude);
+    		var sunTimes = SunCalc.getTimes(new Date(), singlePlace.Lattitude, singlePlace.Longtitude);
     		
     		Meteor.call('checkCurrentWeather', singlePlace.Lattitude, singlePlace.Longtitude, callback);
-    		Meteor.call('setSunTimes', singlePlace._id, sunTimes.sunrise, sunTimes.sunset)
 
     		function callback (err, res) {
-		    	if (err) {
-		       	 	console.log(err);
-		        	return false;
-		    	}
-		    	Session.set('weather', res);
-			}
+                if (err) {
+                    console.log("error: " + err);
+                    return false;
+                }
+                Session.set('weather', res);               
+                var weatherData = Session.get('weather');
+                
+                var setWeather = weatherData.weather[0].description;
+                var setTemp = weatherData.main.temp;
+                var setWind = weatherData.wind.speed;
 
-			weatherData = Session.get('weather');
+                Meteor.call('setWeather', singlePlace._id, setTemp, setWeather, setWind);
+            }
+
+            // var sunriseData = singlePlace.sunrise;
+            // var subString = sunriseData.substring(1,5);
+            // console.log(subString);
+
+            // console.log(singlePlace.sunrise);
+
+    		Meteor.call('setSunTimes', singlePlace._id, sunTimes.sunrise, sunTimes.sunset);		
 
     		var marker = new google.maps.Marker({
 		       	draggable: false,
@@ -77,9 +84,9 @@ Template.cafesMap.onCreated(function() {
 	            '<div id="bodyContent">' +
 	     		'<img id="infoWindowImage" src="' + singlePlace.Image + '" alt="' + singlePlace.Name + '"/>' +
 	     		'<span class="weatherItem"><img class="smallImg" src="images/pin.svg"><p>Address: ' + singlePlace.Adres + '</p></span>' +
-	     		'<span class="weatherItem"><img class="smallImg" src="images/sunrise.svg"><p>Sun: ' + sunTimes.sunrise + '</p></span>' +
-	     		'<span class="weatherItem"><img class="smallImg" src="images/sunset.svg"><p>Till: ' + sunTimes.sunset + '</p></span>' +
-	     		'<span class="weatherItem"><img class="smallImg" src="images/temp.svg"><p>Temp: ' + weatherData.main.temp + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/sunrise.svg"><p>Sun: ' + singlePlace.sunrise + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/sunset.svg"><p>Till: ' + singlePlace.sunset + '</p></span>' +
+	     		'<span class="weatherItem"><img class="smallImg" src="images/temp.svg"><p>Temp: ' + singlePlace.temprature + '</p></span>' +
 	            '</div>' +
 	            '</div>' +
 	            '</a>';
@@ -99,35 +106,7 @@ Template.cafesMap.onCreated(function() {
 		   	
     	});
 
-    	var currentPosition = new google.maps.Marker({
-	       	draggable: false,
-	       	animation: google.maps.Animation.DROP,
-	       	class: "maps-marker current-position",
-	       	position: new google.maps.LatLng(latPosition, lngPosition),
-	       	map: map.instance	       
-	   	});
-
   	});
 });
-
-Template.cafesMap.events({
-	"click .cafeMapItem": function(event) {
-		
-		var lat = document.getElementById("lat").innerHTML;
-		var lng = document.getElementById("lng").innerHTML;
-
-		Meteor.call('checkCurrentWeather', lat, lng, callback);
-
-		function callback (err, res) {
-	    	if (err) {
-	       	 	console.log(err);
-	        	return false;
-	    	}
-
-	    	Session.set('weather', res);
-	    	weatherData = Session.get('weather');
-		}
-	}
-})
 
 

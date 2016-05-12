@@ -5,7 +5,6 @@ Meteor.methods({
         if(!Meteor.userId()){
             throw new Meteor.Error('No Access!');
         }
-        
         Cafes.insert({
             Name: Name,
             Address: Address,
@@ -45,10 +44,21 @@ Meteor.methods({
         }
     },
 
+    setWeather: function(cafeId, temprature, weather, wind) {
+        Cafes.update({
+            _id: cafeId}, 
+            { $set: {
+                temprature: temprature,
+                weather: weather,
+                wind: wind
+            }
+        });
+    },
+
     setSunTimes: function(cafeId, sunriseTime, sunsetTime) {
         Cafes.update({
             _id: cafeId}, 
-            { $push: {
+            { $set: {
                 sunrise: sunriseTime,
                 sunset: sunsetTime
             }

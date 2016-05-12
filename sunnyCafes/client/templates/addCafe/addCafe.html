@@ -1,31 +1,21 @@
 <template name="addCafe">
-  {{> header}}
-  <main id="addCafePage">
-
-    <form class="add-cafe">
-  
-      <label>Name</label>
-    	<input type="text" name="name" placeholder="Name cafe/restaurant">
-
-    <div class="getLatLng">
-        <label>Address</label>
-        <input id="address" type="text" name="address" placeholder="Enter address here" />
-        <button id="btn" style="margin-bottom: 10px;">Get Location</button>
-    </div>
-
-      <label>Lattitude</label>
-    	<input type="text" id="latitude" name="lat" readonly required>
-      <label>Longtitude</label>
-    	<input type="text" id="longtitude" name="lng" readonly required>
-      <label>Google image url</label>
-      <input type="text" name="imgUrl">
-    	<label>Sun</label>
-    	<input type="time" name="sunrise" placeholder="07:00" required>
-    	<label>Till</label>
-     	<input type="time" name="sunset" placeholder="21:15" required>
-      
-      <input type="submit" value="Add Cafe" />
-
-    </form>
-  </main>
+    {{> header}}
+    <main id="addCafePage">
+        <form class="add-cafe">
+            <label>Name</label>
+        	<input type="text" name="name" placeholder="Name cafe/restaurant">
+            <div class="getLatLng">
+                <label>Address</label>
+                <input id="address" type="text" name="address" placeholder="Enter address here" />
+                <button id="btn" style="margin-bottom: 10px;">Get Location</button>
+            </div>
+            <label>Lattitude</label>
+        	<input type="text" id="latitude" name="lat" readonly required>
+            <label>Longtitude</label>
+        	<input type="text" id="longtitude" name="lng" readonly required>
+            <label>Google image url</label>
+            <input type="text" name="imgUrl">
+            <input type="submit" value="Add Cafe" />
+        </form>
+    </main>
 </template>

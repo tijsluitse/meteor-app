@@ -1,17 +1,27 @@
 <head>
+    
     <title>Sunny Cafe</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClpGcbfgQWWUYgPtOaHIbi-a4T-TKAjG8"
-    async defer></script>
+	<!-- <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7Oq7VXoWVBcot0NlGOLsFmaFMIpIezFc"></script> -->
 </head>
 
 <body>
+
+<div class="overlay"></div>
 
 </body>
 
 <template name="home">
 	{{#if currentUser}}
-		{{> cafesMap}}
+		{{> header}}
+		
+		<div id="homeIntro">
+			<img src="images/sun.svg" alt="Logo">
+			<h1>Sunny</h1>
+			<h2>Always looking for a sunny spot on the terrace? Sunny shows you where and when you can sit in the sun.</h2>
+			<a href="/cafesList">Search Cafes</a>
+		</div>
+
 	{{else}}
 		{{> login}}
 	{{/if}}
