@@ -4,7 +4,7 @@ Template.cafesMap.helpers ({
   	Cafes: function(){
     	return Cafes.find({});
   	}
-})
+});
 
 Meteor.startup(function() {    	
 	GoogleMaps.load();
@@ -57,15 +57,14 @@ Template.cafesMap.onCreated(function() {
                 var setWind = weatherData.wind.speed;
 
                 Meteor.call('setWeather', singlePlace._id, setTemp, setWeather, setWind);
-            }
+            } 
 
-            // var sunriseData = singlePlace.sunrise;
-            // var subString = sunriseData.substring(1,5);
-            // console.log(subString);
+            var sunriseDate = sunTimes.sunrise;
+    		var sunriseDataSub = sunriseDate.toLocaleTimeString();
+    		var sunsetDate = sunTimes.sunset;
+    		var sunsetDataSub = sunsetDate.toLocaleTimeString();
 
-            // console.log(singlePlace.sunrise);
-
-    		Meteor.call('setSunTimes', singlePlace._id, sunTimes.sunrise, sunTimes.sunset);		
+    		Meteor.call('setSunTimes', singlePlace._id, sunriseDataSub, sunsetDataSub);		
 
     		var marker = new google.maps.Marker({
 		       	draggable: false,
@@ -76,13 +75,19 @@ Template.cafesMap.onCreated(function() {
 		       	icon: "images/pin.png"
 		   	});
 
+		   	if (singlePlace.Image == "") {
+		   		singlePlace.Image = "https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder.png";
+		   	}
+
 		    var content = 
 			    '<a class="cafeMapItem" href="' + '/singleCafe/' + singlePlace._id + '">' +
 			    '<div id="content">' +
 	            '<h1 id="firstHeading" class="firstHeading">'+ singlePlace.Name + '</h1>' +	       
 	            '<p id="coordinates">Coordinates: ' + '<span id="lat">' + singlePlace.Lattitude + '</span>, <span id="lng"> ' + singlePlace.Longtitude + '</span></p>' + 
 	            '<div id="bodyContent">' +
+	            '<div id="imageHolder">' +
 	     		'<img id="infoWindowImage" src="' + singlePlace.Image + '" alt="' + singlePlace.Name + '"/>' +
+	     		'</div>' + 
 	     		'<span class="weatherItem"><img class="smallImg" src="images/pin.svg"><p>Address: ' + singlePlace.Adres + '</p></span>' +
 	     		'<span class="weatherItem"><img class="smallImg" src="images/sunrise.svg"><p>Sun: ' + singlePlace.sunrise + '</p></span>' +
 	     		'<span class="weatherItem"><img class="smallImg" src="images/sunset.svg"><p>Till: ' + singlePlace.sunset + '</p></span>' +

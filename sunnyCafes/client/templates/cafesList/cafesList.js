@@ -5,7 +5,9 @@ Meteor.call('addExternCafes', data);
 
 Template.cafesList.helpers ({
   	Cafes: function(){
-    	return Cafes.find({});
+    	return Cafes.find({
+    		
+    	});
   	}
 });
 

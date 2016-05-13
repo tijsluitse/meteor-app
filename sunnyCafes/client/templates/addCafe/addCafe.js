@@ -6,11 +6,9 @@ Template.addCafe.events ({
         Adres = document.getElementById("address").value,
         Image = event.target.imgUrl.value,
         Lattitude = event.target.lat.value,
-        Longtitude = event.target.lng.value,
-        sunrise = event.target.sunrise.value,
-        sunset = event.target.sunset.value;
+        Longtitude = event.target.lng.value;
 
-        Meteor.call('addCafe', Name, Adres, Image, Lattitude, Longtitude, sunrise, sunset);
+        Meteor.call('addCafe', Name, Adres, Image, Lattitude, Longtitude);
 
         alert("Cafe Toegevoegd");
 
@@ -18,16 +16,15 @@ Template.addCafe.events ({
         event.target.imgUrl.value = '';
         event.target.lat.value = '';
         event.target.lng.value = '';
-        event.target.sunrise.value = '';
-        event.target.sunset.value = '';
 
         return Router.go('/cafesMap');
 
     },
 
     "click #btn": function(event){
+        event.preventDefault()
         var address = document.getElementById('address').value;
-        getLatitudeLongitude(showResult, address)
+        getLatitudeLongitude(showResult, address);
     }
 
 });

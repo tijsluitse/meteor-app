@@ -1,18 +1,16 @@
 Cafes = new Mongo.Collection('Cafes');
 
 Meteor.methods({
-    addCafe: function(Name, Address, Image, Lattitude, Longtitude, sunrise, sunset){
+    addCafe: function(Name, Adres, Image, Lattitude, Longtitude){
         if(!Meteor.userId()){
             throw new Meteor.Error('No Access!');
         }
         Cafes.insert({
             Name: Name,
-            Address: Address,
+            Adres: Adres,
             Image: Image,
             Lattitude: Lattitude,
-            Longtitude: Longtitude,
-            sunrise: sunrise, 
-            sunset: sunset
+            Longtitude: Longtitude
         });
     },
   
