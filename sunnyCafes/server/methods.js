@@ -1,4 +1,5 @@
 Cafes = new Mongo.Collection('Cafes');
+var SunCalc = require('suncalc');
 
 Meteor.methods({
     addCafe: function(Name, Adres, Image, Lattitude, Longtitude){
@@ -11,7 +12,7 @@ Meteor.methods({
             Image: Image,
             Lattitude: Lattitude,
             Longtitude: Longtitude
-        });
+        });        
     },
   
     deleteCafe: function(cafeId){

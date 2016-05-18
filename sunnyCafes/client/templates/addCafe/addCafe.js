@@ -1,3 +1,5 @@
+var SunCalc = require('suncalc');
+
 Template.addCafe.events ({
     "submit .add-cafe": function(event){
         event.preventDefault()
@@ -6,9 +8,34 @@ Template.addCafe.events ({
         Adres = document.getElementById("address").value,
         Image = event.target.imgUrl.value,
         Lattitude = event.target.lat.value,
-        Longtitude = event.target.lng.value;
+        Longtitude = event.target.lng.value; 
 
         Meteor.call('addCafe', Name, Adres, Image, Lattitude, Longtitude);
+        Meteor.call('checkCurrentWeather', Lattitude, Longtitude, callback);
+        
+        function callback (err, res) {
+            if (err) {
+                console.log("error: " + err);
+                return false;
+            }
+            Session.set('weather', res);               
+            var weatherData = Session.get('weather');
+            
+            var setWeather = weatherData.weather[0].description;
+            var setTemp = weatherData.main.temp;
+            var setWind = weatherData.wind.speed;
+
+            Meteor.call('setWeather', setTemp, setWeather, setWind);
+        } 
+
+        var sunTimes = SunCalc.getTimes(new Date(), Lattitude, Longtitude);
+
+        var sunriseDate = sunTimes.sunrise;
+        var sunriseDataSub = sunriseDate.toLocaleTimeString();
+        var sunsetDate = sunTimes.sunset;
+        var sunsetDataSub = sunsetDate.toLocaleTimeString();
+
+        Meteor.call('setSunTimes', sunriseDataSub, sunsetDataSub);
 
         alert("Cafe Toegevoegd");
 
@@ -17,7 +44,7 @@ Template.addCafe.events ({
         event.target.lat.value = '';
         event.target.lng.value = '';
 
-        return Router.go('/cafesMap');
+        window.location = "/cafesMap";
 
     },
 
