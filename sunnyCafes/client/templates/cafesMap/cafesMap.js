@@ -39,33 +39,7 @@ Template.cafesMap.onCreated(function() {
 	       	icon: 'images/pin_self.png'      
 	   	});
 
-    	allPlaces.forEach(function(singlePlace){
-
-    		var sunTimes = SunCalc.getTimes(new Date(), singlePlace.Lattitude, singlePlace.Longtitude);
-    		
-    		Meteor.call('checkCurrentWeather', singlePlace.Lattitude, singlePlace.Longtitude, callback);
-
-    		function callback (err, res) {
-                if (err) {
-                    console.log("error: " + err);
-                    return false;
-                }
-                Session.set('weather', res);               
-                var weatherData = Session.get('weather');
-                
-                var setWeather = weatherData.weather[0].description;
-                var setTemp = weatherData.main.temp;
-                var setWind = weatherData.wind.speed;
-
-                Meteor.call('setWeather', singlePlace._id, setTemp, setWeather, setWind);
-            } 
-
-            var sunriseDate = sunTimes.sunrise;
-    		var sunriseDataSub = sunriseDate.toLocaleTimeString();
-    		var sunsetDate = sunTimes.sunset;
-    		var sunsetDataSub = sunsetDate.toLocaleTimeString();
-
-    		Meteor.call('setSunTimes', singlePlace._id, sunriseDataSub, sunsetDataSub);		
+    	allPlaces.forEach(function(singlePlace){	
 
     		var marker = new google.maps.Marker({
 		       	draggable: false,		       	
@@ -115,33 +89,7 @@ Template.cafesMap.onCreated(function() {
 
     	Cafes.find().observeChanges({
 		added: function(id, fields){
-			var newCafe = Cafes.findOne({_id: id});
-			
-			var sunTimes = SunCalc.getTimes(new Date(), newCafe.Lattitude, newCafe.Longtitude);
-    		
-    		Meteor.call('checkCurrentWeather', newCafe.Lattitude, newCafe.Longtitude, callback);
-
-    		function callback (err, res) {
-                if (err) {
-                    console.log("error: " + err);
-                    return false;
-                }
-                Session.set('weather', res);               
-                var weatherData = Session.get('weather');
-                
-                var setWeather = weatherData.weather[0].description;
-                var setTemp = weatherData.main.temp;
-                var setWind = weatherData.wind.speed;
-
-                Meteor.call('setWeather', newCafe._id, setTemp, setWeather, setWind);
-            } 
-
-            var sunriseDate = sunTimes.sunrise;
-    		var sunriseDataSub = sunriseDate.toLocaleTimeString();
-    		var sunsetDate = sunTimes.sunset;
-    		var sunsetDataSub = sunsetDate.toLocaleTimeString();
-
-    		Meteor.call('setSunTimes', newCafe._id, sunriseDataSub, sunsetDataSub);		
+			var newCafe = Cafes.findOne({_id: id});	
 
     		var marker = new google.maps.Marker({
 		       	draggable: false,		       	

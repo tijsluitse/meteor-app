@@ -2,7 +2,7 @@ Cafes = new Mongo.Collection('Cafes');
 var SunCalc = require('suncalc');
 
 Meteor.methods({
-    addCafe: function(Name, Adres, Image, Lattitude, Longtitude){
+    addCafe: function(Name, Adres, Image, Lattitude, Longtitude, setTemp, setWeather, setWind, sunriseDataSub, sunsetDataSub){
         if(!Meteor.userId()){
             throw new Meteor.Error('No Access!');
         }
@@ -11,7 +11,12 @@ Meteor.methods({
             Adres: Adres,
             Image: Image,
             Lattitude: Lattitude,
-            Longtitude: Longtitude
+            Longtitude: Longtitude,
+            temprature: setTemp,
+            weather: setWeather,
+            wind: setWind,
+            sunrise: sunriseDataSub,
+            sunset: sunsetDataSub
         });        
     },
   
@@ -41,30 +46,9 @@ Meteor.methods({
                 Cafes.insert(cafe);
             });
         }
-    },
-
-    setWeather: function(cafeId, temprature, weather, wind) {
-        Cafes.update({
-            _id: cafeId}, 
-            { $set: {
-                temprature: temprature,
-                weather: weather,
-                wind: wind
-            }
-        });
-    },
-
-    setSunTimes: function(cafeId, sunriseTime, sunsetTime) {
-        Cafes.update({
-            _id: cafeId}, 
-            { $set: {
-                sunrise: sunriseTime,
-                sunset: sunsetTime
-            }
-        });
     }
 
-})
+});
 
 
 
